@@ -17,8 +17,6 @@ body {
 .container {
   position: relative;
   width: 600px;
-  max-width: 100%;
-  margin: 0 auto; 
   display: flex;
   flex-direction: column;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
@@ -275,3 +273,5 @@ body {
     }
   }
 }
+
+@import "media";
