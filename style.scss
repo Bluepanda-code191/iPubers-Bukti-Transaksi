@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Chewy&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: arial, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
+}
+
+.nota-transaksi {
+  width: 100%;
+  height: 100dvh;
+
+  .header-box {
+    position: relative;
+    height: 25dvh;
+    background-color: #000083;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+    .header {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .header-section {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: -20px;
+
+    left: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    width: 90%;
+    margin: 0 auto;
+
+    .gapoktan {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      h2 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+    }
+    .lokasi {
+      text-align: end;
+      font-size: 14px;
+    }
+  }
+
+  .main-section {
+    padding: 70px 20px;
+    background-color: #f1f1f1;
+
+    .description-section {
+      display: flex;
+      justify-content: space-between;
+
+      .item {
+        display: flex;
+        gap: 30px;
+      }
+
+      .item-description1,
+      .item-description2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+
+      .item-description3 {
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h5 {
+          font-weight: 400;
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .nota-description {
+      padding-top: 20px;
+      .nota-pupuk1 {
+        .header {
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          background-color: #000083;
+          color: #fff;
+          padding: 8px 18px 8px 8px;
+          border-radius: 12px 12px 0 0;
+
+          .x {
+            display: flex;
+            gap: 12px;
+          }
+          .y {
+            display: flex;
+            gap: 45px;
+          }
+        }
+
+        .tabel1,
+        .tabel2 {
+          font-size: 14px;
+          display: flex;
+          padding: 8px 10px;
+          h3 {
+            font-weight: 400;
+          }
+          .number {
+            margin-right: 25px;
+          }
+
+          .jenis-pupuk1 {
+            margin-right: 70px;
+          }
+
+          .jenis-pupuk2 {
+            margin-right: 56px;
+          }
+          .volume {
+            margin-right: 120px;
+          }
+
+          .jumlah {
+            margin-left: 40px;
+          }
+        }
+        .tabel2 {
+          border-bottom: 1px solid#000;
+        }
+      }
+
+      .nota-pupuk2 {
+        font-size: 14px;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        .tanda-tangan {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 180px;
+
+          h5 {
+            opacity: 0.2;
+            text-align: center;
+          }
+
+          h3 {
+            font-weight: 400;
+          }
+        }
+
+        .total-pupuk {
+          text-align: end;
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .item1,
+          .item2,
+          .item3 {
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+
+            h3 {
+              font-weight: 400;
+            }
+          }
+
+          .item3 {
+            padding: 8px 0;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dokumentasi {
+  width: 100%;
+  margin-top: 30px;
+  .header-box {
+    position: relative;
+    height: 20dvh;
+    background-color: #000083;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+    .header {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .ktp-box,
+  .foto-box {
+    padding: 30px 30px;
+
+    .header {
+      font-size: 22px;
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        left: 0;
+        height: 100%;
+        background-color: #000083;
+      }
+    }
+
+    .image-wrapper {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+      .geotag {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        right: 0;
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        text-align: end;
+        font-size: 12px;
+      }
+    }
+  }
+}
