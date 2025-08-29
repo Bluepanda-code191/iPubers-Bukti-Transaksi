@@ -29,12 +29,16 @@ body {
   height: 160px;
   background-color: #000083;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 30px 20px;
 }
 .nota-transaksi .header-box .header {
   color: #fff;
   font-size: 18px;
+}
+.nota-transaksi .header-box img {
+  width: 30%;
 }
 .nota-transaksi .header-section {
   position: absolute;
@@ -203,12 +207,16 @@ body {
   height: 140px;
   background-color: #000083;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 30px;
 }
 .dokumentasi .header-box .header {
   color: #fff;
   font-size: 18px;
+}
+.dokumentasi .header-box img {
+  width: 30%;
 }
 .dokumentasi .ktp-box,
 .dokumentasi .foto-box {
